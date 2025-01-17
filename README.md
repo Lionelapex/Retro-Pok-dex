@@ -2,8 +2,9 @@
 
 A nostalgic, retro-styled Pokédex web application that allows users to search and compare Pokémon with a classic gaming aesthetic.
 
-![Retro Pokédex Preview](![image](https://github.com/user-attachments/assets/90b107b8-44c7-41d3-a9e8-c418581b9c0d)
-)
+![Retro Pokédex Preview]
+![image](https://github.com/user-attachments/assets/dc985aa1-a9ea-4229-aac5-7fec01119760)
+
 
 ## 🌟 Features
 
