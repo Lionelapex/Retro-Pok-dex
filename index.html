@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Pokédex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Retro Pokédex</h1>
+        
+       
+        
+        <p class="instruction">
+            Enter a Pokémon name or number  to search!
+        </p>
+        
+        <div class="search-container">
+            <input type="text" id="pokemonname" class="retro-input" placeholder="Search Pokémon...">
+            <button id="fetchButton" class="retro-button" onclick="fetchData()">Search</button>
+            <button class="retro-button random-btn" onclick="getRandomPokemon()">Random</button>
+            <button class="sound-toggle active" onclick="toggleSound()">🔊</button>
+        </div>
+
+        <div class="pokemon-card" id="pokemon-result">
+            <div class="pokemon-image-container">
+                <img src="" alt="" id="pokemonImage" class="pokemon-image">
+            </div>
+            <div class="pokemon-info">
+                <h2 id="pokemonName" class="pokemon-name"></h2>
+                <div class="type-tags">
+                    <span id="pokemonType" class="type-tag"></span>
+                </div>
+            </div>
+            <div class="pokemon-stats">
+                <div class="stat-bar">
+                    <span class="stat-label">HP</span>
+                    <div class="stat-progress">
+                        <div class="stat-fill" id="hp-stat"></div>
+                    </div>
+                </div>
+                <!-- Repeat for Attack, Defense, Speed etc. -->
+            </div>
+            <div class="moves-list">
+                <h3>Moves</h3>
+                <div class="moves-grid" id="movesList"></div>
+            </div>
+            <button class="shiny-toggle" onclick="toggleShiny()">
+                Change color
+            </button>
+        </div>
+
+        <div class="compare-container">
+            <div class="pokemon-card" id="pokemon1"></div>
+            <div class="vs-badge">VS</div>
+            <div class="pokemon-card" id="pokemon2"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <footer class="retro-footer">
+        <div class="footer-content">
+            <p>Created by <a href="https://github.com/Lionelapex" target="_blank" rel="noopener noreferrer">Lionel</a> 🎮</p>
+            <div class="social-links">
+                <a href="https://github.com/Lionelapex" target="_blank" rel="noopener noreferrer" class="github-link">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="github-icon">
+                    Follow me on GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
